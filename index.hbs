@@ -1,0 +1,23 @@
+{{!< default}}
+
+{{> hero}}
+
+   <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="h3">Hola!</h2>
+            <p class="text-big">Soy un  <strong>programador web</strong> y este es<strong>mi blog</strong>. Escribo sobre JavaScript, y sobre la web. Tambien comparto cosas de mi dia a dia como estudiante y programador.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-posts">
+        <div class="container">
+         {{#foreach posts}}
+         {{>post_temp}}   
+         {{/foreach}}
+        </div>
+    </section>
+    
